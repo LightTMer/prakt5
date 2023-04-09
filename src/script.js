@@ -1,10 +1,9 @@
 var jquery = require("jquery");
 window.$ = window.jQuery = jquery; // notice the definition of global variables here
-// import 'bootstrap'
-// var bootstrap = require("bootstrap");
-// window.$ = window.bootstrap = bootstrap;
 import 'bootstrap/dist/css/bootstrap.css';
-
+var $ = require('jquery');
+window.$ = $;
+require('bootstrap');
 
 
 // Получаем DOM элементы. Работа с модальным окном
