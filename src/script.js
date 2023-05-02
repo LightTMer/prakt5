@@ -117,3 +117,14 @@ $(window).on('load', function() {
 
 });
 
+//Handlebars
+import data from "../data/data.json";
+import block from "../components/text.hbs";
+import titles from "/components/title.hbs";
+
+const root = document.getElementById('root');
+const title = titles({title: data.h_name});
+const blocks = block({blocks: data.blocks});
+
+root.innerHTML +=title;
+root.innerHTML +=blocks;
